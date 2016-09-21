@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SCCalendarListCell" rowHeight="111" id="daJ-du-974" customClass="SCCalendarListCell" customModule="SubscibeCalendar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="daJ-du-974" id="3dN-0t-gP3">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="110.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8IB-ZE-5dz">
+                        <rect key="frame" x="120" y="5" width="240" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="45" id="Del-aJ-0we"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BE8-XW-p6K">
+                        <rect key="frame" x="120" y="83" width="240" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QmX-At-WWq">
+                        <rect key="frame" x="120" y="35.5" width="240" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeX-EN-i46">
+                        <rect key="frame" x="10" y="5" width="100" height="100"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="Bwm-SQ-268"/>
+                            <constraint firstAttribute="width" constant="100" id="yuh-Xb-BKd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8IB-ZE-5dz" secondAttribute="trailing" constant="10" id="58n-La-Sks"/>
+                    <constraint firstItem="GeX-EN-i46" firstAttribute="top" secondItem="3dN-0t-gP3" secondAttribute="top" constant="5" id="5YD-d7-zm9"/>
+                    <constraint firstAttribute="trailing" secondItem="8IB-ZE-5dz" secondAttribute="trailing" constant="15" id="BTs-0O-ZNK"/>
+                    <constraint firstItem="8IB-ZE-5dz" firstAttribute="top" secondItem="GeX-EN-i46" secondAttribute="top" id="CEy-g1-nyy"/>
+                    <constraint firstItem="BE8-XW-p6K" firstAttribute="trailing" secondItem="8IB-ZE-5dz" secondAttribute="trailing" id="Ego-WC-6Ij"/>
+                    <constraint firstItem="8IB-ZE-5dz" firstAttribute="leading" secondItem="GeX-EN-i46" secondAttribute="trailing" constant="10" id="O3I-zt-vyy"/>
+                    <constraint firstItem="GeX-EN-i46" firstAttribute="leading" secondItem="3dN-0t-gP3" secondAttribute="leading" constant="10" id="ORT-oe-W32"/>
+                    <constraint firstItem="QmX-At-WWq" firstAttribute="leading" secondItem="8IB-ZE-5dz" secondAttribute="leading" id="e6p-Oo-k2Z"/>
+                    <constraint firstAttribute="bottom" secondItem="BE8-XW-p6K" secondAttribute="bottom" constant="10" id="nOx-Fl-7GY"/>
+                    <constraint firstItem="BE8-XW-p6K" firstAttribute="leading" secondItem="8IB-ZE-5dz" secondAttribute="leading" id="oOe-iN-cnt"/>
+                    <constraint firstAttribute="trailing" secondItem="QmX-At-WWq" secondAttribute="trailing" constant="15" id="tfC-8a-rFq"/>
+                    <constraint firstItem="BE8-XW-p6K" firstAttribute="top" secondItem="8IB-ZE-5dz" secondAttribute="bottom" constant="10" id="uKG-pq-bOD"/>
+                    <constraint firstItem="QmX-At-WWq" firstAttribute="top" secondItem="8IB-ZE-5dz" secondAttribute="bottom" constant="10" id="x5V-Ut-0ze"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="58n-La-Sks"/>
+                        <exclude reference="uKG-pq-bOD"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="authorLabel" destination="QmX-At-WWq" id="fxn-Be-3J2"/>
+                <outlet property="calendarDescriptionLabel" destination="BE8-XW-p6K" id="hyZ-vh-Wic"/>
+                <outlet property="calendarTitleLabel" destination="8IB-ZE-5dz" id="eXt-TD-MgN"/>
+                <outlet property="coverContainerView" destination="GeX-EN-i46" id="5aH-Vu-FdD"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
